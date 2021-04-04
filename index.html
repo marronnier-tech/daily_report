@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+    <!-- <form action="https://slack.com/api/chat.postMessage" method="POST"></form>-->
+    <form>
+        <div class="quest">
+            <div class="title">
+                <h1>表題1</h1>
+            </div>
+            <textarea id="report"></textarea>
+        </div>
+        <div class="quest">
+            <div class="title">
+                <h1>表題2</h1>
+            </div>
+            <input id="score">
+        </div>
+        <div class="quest">
+            <div class="title">
+                <h1>表題3</h1>
+            </div>
+            <textarea id="reason" rows="10" cols="80"></textarea>
+        </div>
+        <div class="quest">
+            <div class="title">
+                <h1>表題4</h1>
+            </div>
+            <textarea id="solution" rows="10" cols="80"></textarea>
+        </div>
+        <div>
+            <input class="button" type="button" value="send" onclick="SendReport()"> <input type="reset" class="button"
+                value="reset">
+        </div>
+    </form>
+
+    <!-- <div class="result">
+        <p class="failed">投稿に失敗しました</p>
+    </div>-->
+
+
+</body>
+
+</html>
