@@ -1,0 +1,44 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        // 自分で実行したいコマンドを設定する
+        // $dir, $fileNameはそれぞれ編集中のファイルのディレクトリ、ファイル名を表す
+        "cpp": "cd $dir && g++ -O0 -std=c++14 -D_MY_DEBUG -D_GLIBCXX_DEBUG $fileName && ./a.out",
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.ignoreSelection": true,
+    // 以下参考
+    // エディタ全般
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.formatOnSave": true,
+    "editor.autoClosingOvertype": "always",
+    "files.autoSave": "afterDelay",
+    // VSCodeのUI
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    // vim
+    "vim.visualstar": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "OCR A Std",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'MyricaM M', 'YuGothic'",
+    "window.zoomLevel": 0,
+    "go.formatTool": "goimports",
+    "git.enableSmartCommit": true,
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
+    "go.useLanguageServer": true,
+}
