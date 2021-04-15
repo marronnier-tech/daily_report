@@ -14,35 +14,42 @@
             <div class="title">
                 <h1>表題1</h1>
             </div>
-            <textarea id="report"></textarea>
+            <textarea id="report" oninput="ConnectReport()"></textarea>
         </div>
         <div class="quest">
             <div class="title">
                 <h1>表題2</h1>
             </div>
-            <input id="score">
+            <input id="score" oninput="ConnectReport()">
         </div>
         <div class="quest">
             <div class="title">
                 <h1>表題3</h1>
             </div>
-            <textarea id="reason" rows="10" cols="80"></textarea>
+            <textarea id="reason" rows="10" cols="80" oninput="ConnectReport()"></textarea>
         </div>
         <div class="quest">
             <div class="title">
                 <h1>表題4</h1>
             </div>
-            <textarea id="solution" rows="10" cols="80"></textarea>
+            <textarea id="solution" rows="10" cols="80" oninput="ConnectReport()"></textarea>
         </div>
-        <div>
-            <input class="button" type="button" value="send" onclick="SendReport()"> <input type="reset" class="button"
-                value="reset">
-        </div>
+
     </form>
 
     <!-- <div class="result">
         <p class="failed">投稿に失敗しました</p>
     </div>-->
+
+    <div class="quest">
+        <div class="title">
+            <h1>コピペ</h1>
+        </div>
+        <textarea id="connect" rows="10" cols="80">
+        </textarea>
+    </div>
+
+
 
 
 </body>

@@ -1,4 +1,4 @@
-function SendReport() {
+function ConnectReport() {
     let report = document.getElementById("report");
 
     let score = document.getElementById("score");
@@ -7,12 +7,7 @@ function SendReport() {
 
     let sol = document.getElementById("solution");
 
-    if (!report.value || !score.value || !reason.value || !sol.value) {
-        console.log("情報が入力されていません")
-        return;
-    };
-
-    var post = "【内容】" + "\n"
+    var connect = "【内容】" + "\n"
         + report.value + "\n\n"
         + "【自己評価】" + "\n"
         + score.value + "点\n\n"
@@ -20,29 +15,15 @@ function SendReport() {
         + reason.value + "\n\n"
         + "【その他】" + "\n"
         + sol.value;
-    console.log(post);
+    console.log(connect);
 
-    let url = "https://~~~";
+    document.getElementById("connect").innerHTML = connect;
 
-    var xhr = new XMLHttpRequest();
-    try {
-        xhr.open("POST", url);
 
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.onreadystatehange = function () {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (status >= 200 && status < 400) {
-                    console.log(xhr.responseText);
-                    console.log(data);
-                    xhr.send(data);
-                    alert("投稿に成功しました");
-                }
 
-            }
-        }
-    } catch {
-        alert("処理に失敗しました")
-    }
+
+
+
 
 
 }
